@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://Mr43Content.github.io/vi-watch/sitemap.xml
+Sitemap: https://vi-watch.de/sitemap.xml
