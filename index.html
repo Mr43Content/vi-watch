@@ -22,6 +22,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <!-- GA4: Snippet hier einfügen -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Wann erscheint GTA 6 genau?","acceptedAnswer":{"@type":"Answer","text":"Der 19. November 2026 ist der bestätigte Release für PS5 und Xbox Series X|S — nach zwei Verschiebungen (ursprünglich 2025, dann Mai 2026)."}},
+    {"@type":"Question","name":"Was kostet GTA 6?","acceptedAnswer":{"@type":"Answer","text":"79,99 € für die Standard Edition, 99,99 € für die Ultimate Edition. Kein Aufschlag gegenüber dem US-Preis."}},
+    {"@type":"Question","name":"Gibt es eine Collector's Edition?","acceptedAnswer":{"@type":"Answer","text":"Nein. Rockstar bietet ausschließlich Standard und Ultimate Edition an."}},
+    {"@type":"Question","name":"Kommt GTA 6 zum Start auch für PC?","acceptedAnswer":{"@type":"Answer","text":"Nein, eine PC-Fassung ist bestätigt aber ohne Termin, erwartet frühestens 2027/2028."}},
+    {"@type":"Question","name":"Was ist im Vintage Vice City Pack enthalten?","acceptedAnswer":{"@type":"Answer","text":"Ein Vapid Stanier (1955) mit Garage, Vintage-Outfits für Jason und Lucia sowie eine Waffenfolierung, kostenlos bei Kauf oder Vorbestellung vor dem 20.11.2026."}},
+    {"@type":"Question","name":"Enthält die physische Version eine Disc?","acceptedAnswer":{"@type":"Answer","text":"Nein, auch die Box-Version enthält nur einen Download-Code, keinen Datenträger."}}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -29,9 +43,9 @@
   <div class="wrap">
     <div class="brand">VI<span>·</span>WATCH</div>
     <ul>
-      <li><a href="#news">News</a></li>
       <li><a href="#preorder">Preorder</a></li>
       <li><a href="#hardware">Hardware</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#guides">Guides</a></li>
     </ul>
   </div>
@@ -51,6 +65,13 @@
     </div>
 
     <a class="cta" href="#preorder">Preorder-Preise vergleichen →</a>
+
+    <ul class="quickfacts" aria-label="Kurzübersicht">
+      <li><span class="qf-ico" aria-hidden="true">📅</span><span class="qf-label">Release</span><span class="qf-val">19.11.2026</span></li>
+      <li><span class="qf-ico" aria-hidden="true">💶</span><span class="qf-label">Ab</span><span class="qf-val">79,99 €</span></li>
+      <li><span class="qf-ico" aria-hidden="true">🎮</span><span class="qf-label">Plattformen</span><span class="qf-val">PS5 · Xbox</span></li>
+      <li><span class="qf-ico" aria-hidden="true">✅</span><span class="qf-label">Pre-Order</span><span class="qf-val">live seit 25.06.</span></li>
+    </ul>
   </div>
 </header>
 
@@ -63,9 +84,9 @@
 <section id="preorder">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Stand: 25.06.2026 · offiziell bestätigt</span>
+      <span class="eyebrow"><span class="live-dot" aria-hidden="true"></span>Zuletzt geprüft: 07.07.2026 · offiziell bestätigt</span>
       <h2>Preorder-Vergleich</h2>
-      <p>Rockstar hat die Preise heute final bestätigt: 79,99 € für die Standard Edition, 99,99 € für die Ultimate Edition — kein Aufschlag für Europa gegenüber dem US-Preis. Physische Versionen enthalten nur einen Download-Code, keine Disc.</p>
+      <p>Rockstar hat die Preise final bestätigt: 79,99 € für die Standard Edition, 99,99 € für die Ultimate Edition — kein Aufschlag für Europa gegenüber dem US-Preis. Physische Versionen enthalten nur einen Download-Code, keine Disc.</p>
     </div>
     <div class="table-wrap">
       <table>
@@ -74,28 +95,46 @@
         </thead>
         <tbody>
           <tr>
-            <td>PlayStation Store</td><td>Standard</td><td class="price">79,99 €</td><td>Vorbestellbar</td>
-            <td><a class="buy" href="#AFF-PSN-STD" rel="sponsored">Ansehen</a></td>
+            <td data-label="Plattform"><span class="platform"><span class="badge badge-psn">PSN</span>PlayStation Store</span></td>
+            <td data-label="Edition">Standard</td>
+            <td data-label="Preis" class="price">79,99 €</td>
+            <td data-label="Status">Vorbestellbar</td>
+            <td data-label=""><a class="buy" href="#AFF-PSN-STD" rel="sponsored">Ansehen</a></td>
           </tr>
           <tr>
-            <td>Xbox Store</td><td>Standard</td><td class="price">79,99 €</td><td>Vorbestellbar</td>
-            <td><a class="buy" href="#AFF-XBOX-STD" rel="sponsored">Ansehen</a></td>
+            <td data-label="Plattform"><span class="platform"><span class="badge badge-xbx">XBX</span>Xbox Store</span></td>
+            <td data-label="Edition">Standard</td>
+            <td data-label="Preis" class="price">79,99 €</td>
+            <td data-label="Status">Vorbestellbar</td>
+            <td data-label=""><a class="buy" href="#AFF-XBOX-STD" rel="sponsored">Ansehen</a></td>
           </tr>
           <tr>
-            <td>Amazon (physisch)</td><td>Standard</td><td class="price">79,99 €</td><td>Vorbestellbar · nur Download-Code, keine Disc</td>
-            <td><a class="buy" href="#AFF-AMAZON-STD" rel="sponsored">Ansehen</a></td>
+            <td data-label="Plattform"><span class="platform"><span class="badge badge-amz">AMZ</span>Amazon (physisch)</span></td>
+            <td data-label="Edition">Standard</td>
+            <td data-label="Preis" class="price">79,99 €</td>
+            <td data-label="Status">Vorbestellbar · nur Download-Code, keine Disc</td>
+            <td data-label=""><a class="buy" href="#AFF-AMAZON-STD" rel="sponsored">Ansehen</a></td>
+          </tr>
+          <tr class="row-tip">
+            <td data-label="Plattform"><span class="platform"><span class="badge badge-mm">MM</span>MediaMarkt / Saturn<span class="tip-pill">Tipp</span></span></td>
+            <td data-label="Edition">Standard</td>
+            <td data-label="Preis" class="price">79,99 €</td>
+            <td data-label="Status">Vorbestellbar · oft günstiger als Amazon</td>
+            <td data-label=""><a class="buy" href="#AFF-MM-STD" rel="sponsored">Ansehen</a></td>
           </tr>
           <tr>
-            <td>MediaMarkt / Saturn</td><td>Standard</td><td class="price">79,99 €</td><td>Vorbestellbar · oft günstiger als Amazon</td>
-            <td><a class="buy" href="#AFF-MM-STD" rel="sponsored">Ansehen</a></td>
+            <td data-label="Plattform"><span class="platform"><span class="badge badge-all">ALL</span>Digital (alle Stores)</span></td>
+            <td data-label="Edition">Ultimate</td>
+            <td data-label="Preis" class="price">99,99 €</td>
+            <td data-label="Status">Vorbestellbar · nur digital, kosmetische Extras</td>
+            <td data-label=""><a class="buy" href="#AFF-ULTIMATE" rel="sponsored">Ansehen</a></td>
           </tr>
           <tr>
-            <td>Digital (alle Stores)</td><td>Ultimate</td><td class="price">99,99 €</td><td>Vorbestellbar · nur digital, kosmetische Extras</td>
-            <td><a class="buy" href="#AFF-ULTIMATE" rel="sponsored">Ansehen</a></td>
-          </tr>
-          <tr>
-            <td>PC (Steam/Epic)</td><td>—</td><td>—</td><td>Kein Termin · erwartet 2027/28</td>
-            <td>—</td>
+            <td data-label="Plattform"><span class="platform"><span class="badge badge-pc">PC</span>PC (Steam/Epic)</span></td>
+            <td data-label="Edition">—</td>
+            <td data-label="Preis">—</td>
+            <td data-label="Status">Kein Termin · erwartet 2027/28</td>
+            <td data-label="">—</td>
           </tr>
         </tbody>
       </table>
@@ -152,6 +191,41 @@
         <p>Kein Day-One-Termin — Historie deutet auf 2027/28 hin.</p>
         <a class="more" href="articles/ps5pro-vs-seriesx.html">Lesen →</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Kurz &amp; knapp</span>
+      <h2>Häufige Fragen</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>Wann erscheint GTA 6 genau?</summary>
+        <p>Der 19. November 2026 ist der bestätigte Release für PS5 und Xbox Series X|S — nach zwei Verschiebungen (ursprünglich 2025, dann Mai 2026).</p>
+      </details>
+      <details>
+        <summary>Was kostet GTA 6?</summary>
+        <p>79,99 € für die Standard Edition, 99,99 € für die Ultimate Edition. Kein Aufschlag gegenüber dem US-Preis, keine versteckte dritte Preisstufe.</p>
+      </details>
+      <details>
+        <summary>Gibt es eine Collector's Edition?</summary>
+        <p>Nein. Rockstar bietet ausschließlich Standard und Ultimate an — keine limitierte Sammler-Box mit Merchandise.</p>
+      </details>
+      <details>
+        <summary>Kommt GTA 6 zum Start auch für PC?</summary>
+        <p>Nein. Eine PC-Fassung ist zwar bestätigt, aber ohne Termin. Basierend auf GTA V (rund 19 Monate Abstand) rechnen Beobachter frühestens mit 2027/2028.</p>
+      </details>
+      <details>
+        <summary>Was ist im Vintage Vice City Pack enthalten?</summary>
+        <p>Ein zweifarbiger Vapid Stanier (1955) mit eigener Garage, Vintage-Outfits für Jason und Lucia sowie eine tropische Waffenfolierung — kostenlos für alle, die vor dem 20.11.2026 kaufen oder vorbestellen.</p>
+      </details>
+      <details>
+        <summary>Enthält die physische Version eine Disc?</summary>
+        <p>Nein. Auch die Box-Version enthält nur einen Download-Code, keinen Datenträger. Preload ist ab dem 12. November möglich.</p>
+      </details>
     </div>
   </div>
 </section>
