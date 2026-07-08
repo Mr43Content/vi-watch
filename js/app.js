@@ -1,3 +1,27 @@
+// Theme toggle (dark/light), persisted in localStorage
+(function () {
+  var btn = document.getElementById("theme-toggle");
+  if (!btn) return;
+
+  function label(theme) {
+    return theme === "light" ? "\u263E Dunkel" : "\u2600 Hell";
+  }
+
+  function apply(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    btn.textContent = label(theme);
+  }
+
+  var current = document.documentElement.getAttribute("data-theme") || "dark";
+  apply(current);
+
+  btn.addEventListener("click", function () {
+    var next = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+    try { localStorage.setItem("viwatch-theme", next); } catch (e) {}
+    apply(next);
+  });
+})();
+
 // Countdown to GTA VI launch — 19 Nov 2026, 00:00 local
 (function () {
   var target = new Date("2026-11-19T00:00:00");
