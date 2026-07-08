@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){try{var t=localStorage.getItem('viwatch-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>PS5 Pro vs. Xbox Series X für GTA 6 — Lohnt sich der Aufpreis?</title>
 <meta name="description" content="PS5 Pro (899 €) vs. Xbox Series X (649 €): Leistung, Preis und was das für GTA 6 in Leonida bedeutet.">
 <link rel="canonical" href="https://vi-watch.de/articles/ps5pro-vs-seriesx.html">
@@ -13,43 +14,77 @@
 <meta property="og:image" content="https://vi-watch.de/assets/og-image-small_1.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,600;0,700;1,500&family=Archivo+Narrow:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
-<!-- GA4: Snippet hier einfügen -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PHENVWCTR6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PHENVWCTR6');
+</script>
 </head>
 <body>
 
 <nav class="nav">
   <div class="wrap">
     <a class="brand" href="../index.html" style="text-decoration:none">VI<span>·</span>WATCH</a>
-    <ul><li><a href="../index.html#preorder">Preorder</a></li><li><a href="../index.html#hardware">Hardware</a></li></ul>
+    <ul>
+      <li><a href="../index.html#preorder">Preorder</a></li>
+      <li><a href="../index.html#hardware">Hardware</a></li>
+      <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Zwischen Dark und Light Mode wechseln">☀ Hell</button></li>
+    </ul>
   </div>
 </nav>
 
-<article class="article wrap">
-  <span class="eyebrow">Hardware-Guide</span>
-  <h1>PS5 Pro vs. Xbox Series X für GTA 6</h1>
-  <p class="meta">Aktualisiert: 07.07.2026</p>
-
-  <p>Mit dem Release am 19. November 2026 stellt sich für viele dieselbe Frage: reicht die vorhandene Konsole, oder lohnt sich vorher noch ein Upgrade? Hier die Kurzfassung der wichtigsten Unterschiede — inklusive der frischen Sony-Marketingoffensive.</p>
-
-  <h2>Preis &amp; Leistung</h2>
-  <p>Die PS5 Pro liegt seit der Sony-Preiserhöhung im April 2026 bei rund 899,99 € (Preisangaben schwanken je nach Quelle zwischen 699 $ und 899 €, hier bitte vor dem Kauf den aktuellen Store-Preis prüfen) und bringt verbesserte Raytracing-Leistung sowie ein 16,7-TFLOPS-GPU mit PSSR-Upscaling (PlayStation Spectral Super Resolution) gegenüber der Standard-PS5 — allerdings ohne Disc-Laufwerk im Lieferumfang (optional nachrüstbar). Die Xbox Series X kostet aktuell rund 649,99 € inklusive Laufwerk, wird aber ab dem 1. August 2026 durch eine weitere Preiserhöhung von Microsoft teurer — bereits die zweite Anhebung innerhalb eines Jahres.</p>
-
-  <h2>Sony-Marketing: &quot;GTA 6 plays best on PS5&quot;</h2>
-  <p>Am 24. Juni 2026 veröffentlichten Sony und Rockstar gemeinsam einen Blogpost, der PS5 als die beste Plattform für GTA 6 bewirbt. Offiziell bestätigt sind dabei DualSense-Haptik (Vibration reagiert auf Schüsse, Kollisionen und Wetter), Tempest-3D-Audio sowie schnellere Ladezeiten dank SSD. Wichtig: Das ist eine reine Marketing-Partnerschaft, keine inhaltliche Exklusivität — beide Konsolen bekommen laut Rockstar denselben Umfang, dieselben Inhalte, zum selben Release-Termin. Die PS5-Store-Seite trägt zusätzlich das Label &quot;PS5 Pro Enhanced&quot;, konkrete Verbesserungen (Auflösung, Framerate) hat Rockstar aber noch nicht spezifiziert.</p>
-
-  <h2>Was bedeutet das für Leonida?</h2>
-  <p>Rockstar hat bislang keine offiziellen technischen Spezifikationen zu Auflösung oder Framerate auf den einzelnen Plattformen veröffentlicht. Digital-Foundry-Einschätzungen gehen davon aus, dass Rockstars CPU-lastige Open-World-Engine ein stabiles 60fps-Ziel selbst auf der PS5 Pro schwierig macht — wahrscheinlicher sind Performance- und Qualitätsmodi mit Kompromissen bei Auflösung oder Framerate. Die Pro-Hardware wird sich also vor allem in Detailgrad, Schatten und Ladezeiten bemerkbar machen, nicht in einem grundsätzlich anderen Spielerlebnis.</p>
-
-  <h2>Unsere Einschätzung</h2>
-  <p>Ein offizielles GTA-6-Konsolen-Bundle gibt es bislang bei keinem der beiden Hersteller. Wer ohnehin eine neue Konsole plant, sollte trotzdem eher früher als später zuschlagen: Branchenbeobachter warnen wegen der hohen Nachfrage vor Lieferengpässen zum Release, und die Xbox-Preiserhöhung ab August macht Warten auf dieser Seite tendenziell teurer statt günstiger. Wer bereits eine PS5 oder Series X besitzt, muss für den Start keine Sorge haben: beide laufen das Spiel zum Release, der Unterschied liegt in Details, nicht im Grundlegenden.</p>
-
-  <div class="disclaimer-box">
-    Dieser Artikel ist eine unabhängige Einschätzung von VI·Watch, keine offizielle Aussage von Rockstar Games, Sony oder Microsoft. Preise und technische Daten ohne Gewähr, Stand 07.07.2026.
+<header class="article-hero">
+  <div class="scene skyline-bg"></div>
+  <div class="fade"></div>
+  <div class="inner">
+    <div class="crumbs">
+      <a href="../index.html#hardware">← Guides</a>
+      <span class="tag">Vergleich</span>
+    </div>
+    <h1>PS5 Pro <em style="color:var(--amber);font-style:normal;">vs.</em> Xbox Series X</h1>
+    <p class="dek">899 € vs. 649 € — lohnt sich der Aufpreis, um Leonida in 4K/60fps zu erleben? Der ehrliche Hardware-Check vor dem Release.</p>
+    <div class="meta-row"><span>VI·Watch Redaktion</span><span>·</span><span>Aktualisiert 07.07.2026</span><span>·</span><span>5 Min. Lesezeit</span></div>
   </div>
+</header>
 
-  <p><a href="../index.html#preorder">← Zurück zum Preorder-Vergleich</a></p>
+<article class="article">
+  <div class="wrap-inner">
+    <p class="lede"><strong>Kurz gesagt:</strong> Wer bereits eine Series X besitzt, muss nicht wechseln. Für Neukäufer mit 4K-TV und Fokus auf maximale Bildqualität ist die PS5 Pro das stärkere Gerät — der Aufpreis ist aber happig.</p>
+
+    <h2>Preis &amp; Leistung</h2>
+    <p>Die PS5 Pro liegt seit der Sony-Preiserhöhung im April 2026 bei rund 899,99 € (Angaben schwanken je nach Quelle zwischen 699 $ und 899 € — vor dem Kauf den aktuellen Store-Preis prüfen) und bringt ein 16,7-TFLOPS-GPU mit PSSR-Upscaling (KI-gestützt) gegenüber der Standard-PS5 — allerdings ohne Disc-Laufwerk im Lieferumfang. Die Xbox Series X kostet aktuell rund 649,99 € inklusive Laufwerk, wird aber ab dem 1. August 2026 durch eine weitere Preiserhöhung teurer — bereits die zweite Anhebung innerhalb eines Jahres.</p>
+
+    <div class="spec-table">
+      <div class="row head"><span></span><span>PS5 Pro</span><span>Series X</span></div>
+      <div class="row"><span class="label">Preis (UVP)</span><span class="a">899 €</span><span class="b">649 €</span></div>
+      <div class="row"><span class="label">GPU-Leistung</span><span class="a">~16,7 TFLOPS</span><span class="b">12,15 TFLOPS</span></div>
+      <div class="row"><span class="label">Upscaling</span><span class="a">PSSR (KI)</span><span class="b">kein Systemupscaler</span></div>
+      <div class="row"><span class="label">Disc-Laufwerk</span><span class="a">optional (extern)</span><span class="b">integriert</span></div>
+    </div>
+
+    <h2>Sony-Marketing: "GTA 6 plays best on PS5"</h2>
+    <p>Am 24. Juni 2026 veröffentlichten Sony und Rockstar gemeinsam einen Blogpost, der PS5 als beste Plattform für GTA 6 bewirbt. Offiziell bestätigt: DualSense-Haptik (Vibration reagiert auf Schüsse, Kollisionen, Wetter), Tempest-3D-Audio und schnellere Ladezeiten dank SSD. Wichtig: reine Marketing-Partnerschaft, keine inhaltliche Exklusivität — beide Konsolen bekommen laut Rockstar denselben Umfang, zum selben Termin. Die PS5-Store-Seite trägt zusätzlich das Label "PS5 Pro Enhanced", konkrete Verbesserungen bei Auflösung/Framerate hat Rockstar aber noch nicht spezifiziert.</p>
+
+    <h2>Was bedeutet das für Leonida?</h2>
+    <p>Rockstar hat bislang keine offiziellen technischen Spezifikationen veröffentlicht. Digital-Foundry-Einschätzungen gehen davon aus, dass die CPU-lastige Open-World-Engine ein stabiles 60fps-Ziel selbst auf der PS5 Pro schwierig macht — wahrscheinlicher sind Performance- und Qualitätsmodi mit Kompromissen bei Auflösung oder Framerate.</p>
+
+    <blockquote class="pullquote">„Für die meisten Spieler ist eine Series X oder Standard-PS5 völlig ausreichend — der Pro-Aufpreis lohnt nur für Enthusiasten mit großem 4K-Display.“</blockquote>
+
+    <h2>Empfehlung</h2>
+    <p>Hast du bereits eine der aktuellen Konsolen: behalten. Kaufst du neu und willst das bestmögliche Bild: PS5 Pro. Achtest du aufs Budget: Series X mit 649 € ist das klar bessere Preis-Leistungs-Verhältnis. Ein offizielles GTA-6-Bundle gibt es bislang bei keinem der beiden Hersteller — bei hoher Nachfrage lieber früher als später zuschlagen.</p>
+
+    <div class="disclaimer-box">
+      <strong>Transparenz:</strong> Dieser Artikel ist eine unabhängige Einschätzung von VI·Watch, keine offizielle Aussage von Rockstar Games, Sony oder Microsoft. Er kann Affiliate-Links enthalten. Preise und technische Daten ohne Gewähr, Stand 07.07.2026.
+    </div>
+
+    <p><a href="../index.html#preorder">← Zurück zum Preorder-Vergleich</a></p>
+  </div>
 </article>
 
 <footer>
