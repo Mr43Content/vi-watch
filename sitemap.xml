@@ -3,6 +3,7 @@
   <url><loc>https://vi-watch.de/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
   <url><loc>https://vi-watch.de/articles/preorder-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://vi-watch.de/articles/ps5pro-vs-seriesx.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vi-watch.de/articles/editionen-vergleich.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://vi-watch.de/impressum.html</loc><changefreq>yearly</changefreq><priority>0.1</priority></url>
   <url><loc>https://vi-watch.de/datenschutz.html</loc><changefreq>yearly</changefreq><priority>0.1</priority></url>
 </urlset>
